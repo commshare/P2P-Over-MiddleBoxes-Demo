@@ -1,8 +1,21 @@
 https://github.com/cameron314/concurrentqueue
 
+#
+工程是debug的，
+所以其他的库都是debug版本。
+evpp 需要自己下载libevent和glog/ connqueue
+event需要openssl
+glog需要glags
+
+debug版本的下的openssl库的名字，跟release的不一样。
+
+
 ##GLOG by evpp
 cmake-gui win32
 D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\glog-0.4.0\win320debug
+##glog 貌似需要debug的版本，但是必须是glog.lib
+因此，把glogd.lib改为glog.lib
+
 
 ##OPENSSL by libevent
 https://blog.csdn.net/jiangdong2007/article/details/89429266

@@ -15,8 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="p2pServer.cpp">
+    <ClCompile Include="message.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="main_p2pServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="handler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="message.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="packing.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="handler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

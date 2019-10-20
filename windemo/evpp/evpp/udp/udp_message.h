@@ -45,7 +45,7 @@ inline bool SendMessage(evpp_socket_t fd, const struct sockaddr* addr, const cha
     if (dlen == 0) {
         return true;
     }
-
+	//MSG_DONTWAIT is 0
     int sentn = ::sendto(fd, d, dlen, 0, addr, sizeof(*addr));
     if (sentn != (int)dlen) {
         return false;
