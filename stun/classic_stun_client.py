@@ -54,9 +54,11 @@ class StunHeader(object):
         self.transactionId = kwargs.pop('transactionId', randint(0, (1 << 128) - 1))
         if len(kwargs) != 0:
             raise ValueError('unknown kwargs: {}'.format(kwargs))
+    ###pack to network order ？
     def to_bytes(self):
         return struct.pack('!HH', self.type.value, self.length) + \
                 self.transactionId.to_bytes(16, 'big')
+    ###unpack from network order
     @classmethod
     def from_bytes(cls, data):
         assert len(data) == 20
@@ -141,6 +143,7 @@ class Message(object):
         return '{}: [{}]'.format(self.header,
                 ','.join(map(str, self.attributes)))
 
+#sock send request to stun server
 def send_and_recv(sock, stun_server, request):
     logging.debug('SEND: {}'.format(request))
     sock.sendto(request.to_bytes(), stun_server)
@@ -155,6 +158,7 @@ def send_and_recv(sock, stun_server, request):
 
 def test_I(sock, stun_server):
     logging.info('running test I   with {}:{}'.format(stun_server[0], stun_server[1]))
+    #create message
     binding_request = Message(header=StunHeader(type=MessageType.BINDING_REQUEST))
     return send_and_recv(sock, stun_server, binding_request)
 
@@ -183,8 +187,10 @@ def get_changed_address(message):
 def test_nat(sock, stun_server, local_ip='0.0.0.0'):
     # Please refer to the README
     resp = test_I(sock, stun_server)
+    #udp blocked by firewall
     if resp is None:
         return NAT.UDP_BLOCKED
+    #local host
     local_address = local_ip, sock.getsockname()[1]
     logging.info('local address is {}:{}'.format(local_address[0], local_address[1]))
     m1 = get_mapped_address(resp)
@@ -224,6 +230,7 @@ def main():
     else:
         local_ip = '0.0.0.0'
     logging.basicConfig(level=logging.INFO)
+    #udp
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.settimeout(3.0)
     # choose the fastest stun server to you

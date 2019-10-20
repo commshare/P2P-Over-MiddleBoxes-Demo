@@ -1,0 +1,12 @@
+北京小区的，不是CONE，是symmetric
+
+ zhangbin@zhangbin-mbp  ~/tet/licodelllcode/P2P-Over-MiddleBoxes-Demo/stun   master  ./classic_stun_client.py 
+INFO:root:running test I   with stun.pppan.net:3478
+INFO:root:local address is 0.0.0.0:59851
+INFO:root:MAPPED_ADDRESS: 218.253.132.99:26918
+INFO:root:running test II  with stun.pppan.net:3478
+INFO:root:running test I   with 77.72.169.212:3479
+INFO:root:MAPPED_ADDRESS: 129.227.133.60:21865
+NAT_TYPE: Symmetric NAT
+ zhangbin@zhangbin-mbp  ~/tet/licodelllcode/P2P-Over-MiddleBoxes-Demo/stun   master  
+

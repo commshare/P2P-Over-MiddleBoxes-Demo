@@ -1,0 +1,5 @@
+zhangbin@zhangbin-mbp  ~/tet/licodelllcode/P2P-Over-MiddleBoxes-Demo   master  make p2pchat
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C p2pchat
+gcc server.c endpoint.c message.c logging.c endpoint_list.c -o server -g -std=c99 -Wall -Wno-implicit-function-declaration
+gcc client.c endpoint.c message.c logging.c endpoint_list.c -o client -g -std=c99 -Wall -Wno-implicit-function-declaration -pthread
+ zhangbin@zhangbin-mbp  ~/tet/licodelllcode/P2P-Over-MiddleBoxes-Demo   master  
