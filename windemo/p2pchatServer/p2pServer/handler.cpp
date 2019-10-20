@@ -11,13 +11,27 @@ void Handler::OnRecv(int server_sock, const sockaddr* from, const char* buf, siz
 	  msg.head.magic, msg.head.type, msg.head.length, msg.body);
 	return;
   }
-  LOG_TRACE << "RECV " << msg.head.length << " bytes from " << evpp::sock::ToIPPort(from)
+  std::string ipport = evpp::sock::ToIPPort(from);
+  LOG_TRACE << "RECV " << msg.head.length << " bytes from " << ipport
 	<< " msg type " << strmtype((MessageType)msg.head.type);// << " body :" << msg.body;
 	
- 
+  if (clientpool_.get())
+  {
+	auto itr = clientpool_->find(ipport);
+	if (itr == clientpool_->end())
+	{
+	  LOG_TRACE << " FIND A NEW IPPORT " << ipport;
+	  clientpool_->insert(ipport);
+	}
+	
+  }
+  else {
+	LOG_ERROR << " not init clientpool ";
+  }
   switch (msg.head.type) {
   case MTYPE_LOGIN:
   {
+	
 	//if (0 == eplist_add(g_client_pool, from)) {
 	//  log_info("%s logged in", ep_tostring(from));
 	//  udp_send_text(sock, from, MTYPE_REPLY, "Login success!");
