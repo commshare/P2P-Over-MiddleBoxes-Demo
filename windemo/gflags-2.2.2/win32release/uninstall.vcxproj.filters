@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\gflags-2.2.2\win32release\CMakeFiles\615d1a9a26fe782eb8a71df881d9cea5\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\gflags-2.2.2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\gflags-2.2.2\win32release\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{12A6B06B-0A9D-3FD7-B9C7-9D9D5C01CAC8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

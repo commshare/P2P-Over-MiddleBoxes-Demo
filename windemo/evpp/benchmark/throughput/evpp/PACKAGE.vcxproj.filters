@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\CMakeFiles\2f303ee6efd301cd739f80c7b5294b66\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{71B5BCF0-0791-33F6-81BF-9D1A93A19D1C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

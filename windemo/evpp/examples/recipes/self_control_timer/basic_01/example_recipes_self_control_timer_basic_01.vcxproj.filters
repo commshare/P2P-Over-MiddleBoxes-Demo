@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\examples\recipes\self_control_timer\basic_01\event_watcher.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\examples\recipes\self_control_timer\basic_01\invoke_timer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\examples\recipes\self_control_timer\basic_01\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\examples\recipes\self_control_timer\basic_01\event_watcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\examples\recipes\self_control_timer\basic_01\invoke_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\examples\recipes\self_control_timer\basic_01\winmain-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\examples\recipes\self_control_timer\basic_01\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A53B3494-B9CC-3EAF-B517-B3072D502CDD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{597FBA2A-4D0F-3A1F-8225-DF2CFF06DD36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

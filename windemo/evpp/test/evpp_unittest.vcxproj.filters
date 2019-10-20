@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\3rdparty\gtest\src\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\3rdparty\gtest\src\gtest_main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\any_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\buffer_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\dns_resolver_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\event_condition_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\event_loop_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\event_loop_thread_pool_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\event_loop_thread_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\event_watcher_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\evhttp_client_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\glog_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\http_client_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\http_server_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\http_trivial_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\invoke_timer_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\sockets_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\tcp_client_reconnect_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\tcp_client_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\tcp_server_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\time_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\trivial_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\udp_server_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\utility_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\winmain.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{597FBA2A-4D0F-3A1F-8225-DF2CFF06DD36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

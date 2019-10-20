@@ -1,0 +1,20 @@
+https://github.com/cameron314/concurrentqueue
+
+##GLOG by evpp
+cmake-gui win32
+D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\glog-0.4.0\win320debug
+
+##OPENSSL by libevent
+https://blog.csdn.net/jiangdong2007/article/details/89429266
+编译32位版本的，vs2015 2017 2019有个兼容工具 比较坑，所以启动命令行的时候要注意！！否则编译出错的！！！
+
+
+##libevent 需要openssl
+
+###这个有修改编译步骤，可以参考下
+https://github.com/ArkNX/evpp
+cmake -G "Visual Studio 14 Win64" -DLIBEVENT_DIR=path/to/libevent/ -DLIBEVENT_LIB_DIR=path/to/libevent/library/dir ..
+
+##exe需要libevent的dll
+D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\libevent-release-2.1.11-stable\win320debug\bin\Debug
+

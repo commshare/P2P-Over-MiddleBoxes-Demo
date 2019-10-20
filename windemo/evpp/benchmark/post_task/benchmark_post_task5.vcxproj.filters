@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\benchmark\post_task\post_task5.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\mycode\P2P-Over-MiddleBoxes-Demo\windemo\evpp\benchmark\post_task\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{597FBA2A-4D0F-3A1F-8225-DF2CFF06DD36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
