@@ -1,6 +1,7 @@
 #include "handler.h"
 #include "evpp/sockets.h"
 #include "evpp/logging.h"
+#include "endpoint.h"
 
 void Handler::OnRecv(int server_sock, const sockaddr* from, const char* buf, size_t dlen)
 {
@@ -68,16 +69,30 @@ void Handler::OnRecv(int server_sock, const sockaddr* from, const char* buf, siz
   break;
   case MTYPE_PUNCH:
   {
-	/*endpoint_t other = ep_fromstring(msg.body);
-	log_info("punching to %s", ep_tostring(other));
-	udp_send_text(sock, other, MTYPE_PUNCH, ep_tostring(from));
-	udp_send_text(sock, from, MTYPE_TEXT, "punch request sent");*/
+	endpoint_t other = ep_fromstring(msg.body);
+	try
+	{
+	  LOG_TRACE << "punching to " << ep_tostring(other);
+	  sockaddr* other_addr = evpp::sock::sockaddr_cast(&other);
+	  //向other地址，发送消息，告诉other实际上是from发来的
+	  udp_send_text(server_sock, other_addr, MTYPE_PUNCH, ipport.c_str());
+	}
+	catch (const std::exception&)
+	{
+
+	}
+
+	
+	udp_send_text(server_sock, from, MTYPE_TEXT, "punch request sent");
   }
   break;
   case MTYPE_PING:
 	udp_send_text(server_sock, from, MTYPE_PONG, NULL);
 	break;
   case MTYPE_PONG:
+	break;
+  case MTYPE_TEXT:
+	std::cout << "msg.body " << msg.body << std::endl;
 	break;
   default:
 	//udp_send_text(sock, from, MTYPE_REPLY, "Unkown command");

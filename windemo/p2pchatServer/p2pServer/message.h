@@ -5,7 +5,7 @@
 #define MSG_MAGICLEN 2
 #define MSG_TYPELEN 2
 #define MSG_BODYLEN 4
-#define MSG_HEADLEN MSG_MAGICLEN + MSG_TYPELEN + MSG_BODYLEN
+#define MSG_HEADLEN (MSG_MAGICLEN + MSG_TYPELEN + MSG_BODYLEN)
 /* a message is a UDP datagram with following structure:
    -----16bits--+---16bits--+-----32bits----------+---len*8bits---+
    --  0x8964   + msg type  + msg length(exclude) + message body  +
@@ -28,6 +28,7 @@ enum _MessageType {
   MTYPE_PONG,
   MTYPE_REPLY,
   MTYPE_TEXT,
+  MYTYP_SEND_SVR,
   MTYPE_END
 };
 /*

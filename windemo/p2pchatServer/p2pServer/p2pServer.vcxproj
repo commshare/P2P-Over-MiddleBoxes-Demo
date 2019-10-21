@@ -89,7 +89,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>../../glog-0.4.0/src/;../../glog-0.4.0/;../../evpp/;../../evpp/evpp</AdditionalIncludeDirectories>
     </ClCompile>
@@ -157,9 +157,11 @@
     <ClCompile Include="handler.cpp" />
     <ClCompile Include="message.cpp" />
     <ClCompile Include="main_p2pServer.cpp" />
-    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="endpoint.cpp" />
+    <ClCompile Include="test_address.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="endpoint.h" />
     <ClInclude Include="handler.h" />
     <ClInclude Include="message.h" />
     <ClInclude Include="packing.hpp" />

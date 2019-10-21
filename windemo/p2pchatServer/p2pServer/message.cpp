@@ -80,12 +80,30 @@ Message msg_unpack(const char* buf, unsigned int buflen) {
   //uint32
   m.head.length = ntohl(*(uint32_t*)(buf + index));
   index += sizeof(uint32_t);
+  //buflen - 2 - 2 -4 才是消息吧
   if (index + m.head.length > buflen) {
 	printf("message declared body size(%d) is larger than what's received (%d), truncating\n",
 	  m.head.length, buflen - MSG_HEADLEN);
 	m.head.length = buflen - index;
   }
+  if (MTYPE_PUNCH == m.head.type)
+  {
+	std::cout << " msg body size " << m.head.length << " buflen " << buflen << std::endl;
+  }
+
   m.body = buf + index;
+  if (MYTYP_SEND_SVR == m.head.type || MTYPE_PUNCH == m.head.type)
+  {
+	std::cout << " msg body size " << m.head.length << " buflen " << buflen << std::endl;
+	if (m.body != nullptr)
+	{
+	  char temp[100];
+	  memset(temp, 0, 100);
+	  memcpy(temp, m.body, m.head.length);
+	  temp[m.head.length] = '\0';
+	  std::cout << " MYTYP_SEND_SVR " << m.head.length << " buflen " << buflen << " body " << temp << std::endl;
+	}	
+  }
   return m;
 }
 
